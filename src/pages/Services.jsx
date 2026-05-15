@@ -129,20 +129,65 @@ const Services = () => {
         ))}
       </div>
 
-      {/* ── Additional Trust Section ── */}
-      <div className="max-w-screen-xl mx-auto px-6 py-24 text-center">
-        <div className="inline-block p-1 bg-[#3f4d46] rounded-full mb-8">
-           <div className="px-6 py-2 rounded-full border border-[#f0ebe4]/20 text-[#f0ebe4] text-[10px] font-black uppercase tracking-widest">
-             Our Commitment to You
-           </div>
+      {/* ── Process Section ── */}
+      <section className="py-24 bg-white border-b border-[#f0ebe4] px-6">
+        <div className="max-w-screen-xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="text-[#b5884b] text-xs font-black uppercase tracking-[0.3em] mb-4 block">
+              Our Process
+            </span>
+            <h2 className="font-display font-black text-3xl md:text-5xl text-[#3f4d46]">
+              Simple steps to <span className="text-[#cda67c]">peace of mind.</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {[
+              { step: '01', title: 'Select Service', desc: 'Browse our specialized categories and pick what fits your family.' },
+              { step: '02', title: 'Consultation', desc: 'Book a free initial call to discuss your specific needs.' },
+              { step: '03', title: 'Matched Care', desc: 'We connect you with the perfect expert or practitioner.' },
+              { step: '04', title: 'Start Journey', desc: 'Receive high-quality care and support in your own home.' }
+            ].map((item, i) => (
+              <div key={i} className="relative p-8 bg-[#faf6f2] rounded-[4px] border border-[#f0ebe4]">
+                <span className="text-5xl font-black text-[#3f4d46]/5 absolute top-4 right-4">{item.step}</span>
+                <h3 className="font-bold text-[#3f4d46] mb-4 relative z-10">{item.title}</h3>
+                <p className="text-xs text-[#3f4d46]/60 leading-relaxed relative z-10">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
-        <h3 className="font-display font-extrabold text-3xl md:text-5xl text-[#3f4d46] mb-8 max-w-3xl mx-auto">
-          Tailored support systems designed for <span className="text-[#cda67c]">modern families.</span>
-        </h3>
-        <p className="text-[#3f4d46]/50 text-lg max-w-2xl mx-auto leading-relaxed">
-          From cultural heritage to daily nutritional needs, we provide verified experts and premium care to help your family flow through life effortlessly.
-        </p>
-      </div>
+      </section>
+
+      {/* ── FAQ Section ── */}
+      <section className="py-24 px-6 bg-[#faf6f2]">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="font-display font-black text-3xl text-[#3f4d46]">Common Questions</h2>
+          </div>
+          <div className="space-y-4">
+            {[
+              { q: 'Are your nannies and caregivers verified?', a: 'Yes, every practitioner undergoes a rigorous 7-point vetting process including background checks and reference verification.' },
+              { q: 'How does the food delivery service work?', a: 'We deliver fresh, organic meal kits tailored to your child’s age and developmental stage twice a week.' },
+              { q: 'Can I cancel or reschedule a consultation?', a: 'Absolutely. We offer flexible scheduling and free cancellations up to 24 hours before your appointment.' }
+            ].map((faq, i) => (
+              <div key={i} className="bg-white p-6 rounded-[4px] border border-[#f0ebe4] shadow-sm">
+                <h4 className="font-bold text-[#3f4d46] mb-2">{faq.q}</h4>
+                <p className="text-sm text-[#3f4d46]/60 leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Final CTA ── */}
+      <section className="py-24 px-6 bg-[#3f4d46] text-center">
+         <div className="max-w-2xl mx-auto">
+           <h2 className="text-[#faf6f2] font-display font-black text-3xl md:text-5xl mb-8">Ready to grow with us?</h2>
+           <button className="bg-[#cda67c] hover:bg-[#b5884b] text-[#3f4d46] px-10 py-5 rounded-[4px] font-black uppercase tracking-widest text-sm transition-all shadow-xl">
+             Schedule a Free Consultation
+           </button>
+         </div>
+      </section>
     </div>
   )
 }

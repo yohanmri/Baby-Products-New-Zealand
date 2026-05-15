@@ -12,6 +12,7 @@ import Services        from './pages/Services'
 import About           from './pages/About'
 import Contact         from './pages/Contact'
 import Shop            from './pages/Shop'
+import Bundles         from './pages/Bundles'
 import Astrology       from './pages/services/Astrology'
 import Food            from './pages/services/Food'
 import Nanny           from './pages/services/Nanny'
@@ -37,6 +38,7 @@ function App() {
             <Route path="/services/nanny"     element={<Nanny />}        />
             <Route path="/services/traditional-events" element={<TraditionalEvents />} />
             <Route path="/shop"             element={<Shop />}            />
+            <Route path="/bundles"          element={<Bundles />}         />
             <Route path="/about"            element={<About />}           />
             <Route path="/contact"          element={<Contact />}         />
           </Routes>
