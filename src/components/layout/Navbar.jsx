@@ -35,15 +35,7 @@ const Navbar = () => {
         className="fixed top-0 left-0 right-0 z-50 h-4 md:h-5 flex items-center"
       >
         <div className="max-w-screen-xl mx-auto px-10 flex items-center justify-center w-full relative">
-          {/* Brand Centered on Border - Only element left on border */}
-          <Link to="/" className="flex flex-col leading-tight group z-50 absolute left-1/2 -translate-x-1/2 top-[-2px]">
-            <span className="font-display font-black text-lg md:text-xl tracking-tighter text-[#3f4d46]">
-              Grow & Flow
-            </span>
-            <span className="text-[8px] md:text-[9px] font-bold tracking-[0.3em] uppercase text-[#b5884b] text-center -mt-1.5">
-              Family HUB
-            </span>
-          </Link>
+          {/* Top border items if any */}
         </div>
       </header>
 
