@@ -36,6 +36,18 @@ export default {
       backgroundImage: {
         'hero-gradient': 'linear-gradient(135deg, rgba(30,27,46,0.7) 0%, rgba(244,114,182,0.25) 100%)',
       },
+      keyframes: {
+        'kiwi-move': {
+          '0%': { transform: 'translateX(-10vw) translateY(0) rotate(0deg)' },
+          '25%': { transform: 'translateX(25vw) translateY(-20px) rotate(5deg)' },
+          '50%': { transform: 'translateX(50vw) translateY(0) rotate(0deg)' },
+          '75%': { transform: 'translateX(75vw) translateY(-20px) rotate(-5deg)' },
+          '100%': { transform: 'translateX(110vw) translateY(0) rotate(0deg)' },
+        }
+      },
+      animation: {
+        'kiwi-walk': 'kiwi-move 20s linear infinite',
+      }
     },
   },
   plugins: [],

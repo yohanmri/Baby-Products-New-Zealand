@@ -17,6 +17,7 @@ import Astrology       from './pages/services/Astrology'
 import Food            from './pages/services/Food'
 import Nanny           from './pages/services/Nanny'
 import TraditionalEvents from './pages/services/TraditionalEvents'
+import KiwiCharacter   from './components/home/KiwiCharacter'
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <KiwiCharacter />
       </div>
     </Router>
   )

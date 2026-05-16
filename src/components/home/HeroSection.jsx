@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, ShoppingBag } from 'lucide-react'
+import KiwiAnimation from './KiwiAnimation'
 
 const HeroSection = () => (
   <section className="relative w-full h-screen min-h-[700px] bg-[#faf6f2] p-0 overflow-hidden">
@@ -54,6 +55,9 @@ const HeroSection = () => (
           </Link>
         </div>
       </div>
+
+      {/* ── Kiwi Animation ── */}
+      <KiwiAnimation />
     </div>
   </section>
 )
